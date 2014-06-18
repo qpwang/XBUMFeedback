@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = 'XBUMFeedback'
-  s.version       = '0.1.0'
+  s.version       = '0.2.0'
   s.summary       = 'Custom UMFeedback'
   s.homepage      = 'https://github.com/qpwang/XBUMFeedback'
   s.author        = { 'qpwang' => 'wqqqqq21@gmail.com' }
@@ -10,10 +10,11 @@ Pod::Spec.new do |s|
       :git => 'https://github.com/qpwang/XBUMFeedback.git',
       :tag => '0.1.0'
   }
-  s.preserve_paths = '*'
   s.source_files  = 'UMFeedback.h'
+  s.resources = '*.bundle'
+  s.vendored_frameworks = '*.framework'
   s.vendored_libraries = 'libUMfeedback.a'
-  s.requires_arc  = true
   s.license = 'MIT'
+  s.requires_arc  = true
 
 end
