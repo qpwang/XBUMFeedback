@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
       :git => 'https://github.com/qpwang/XBUMFeedback.git',
       :tag => '2.1'
   }
-  s.source_files  = 'UMFeedback.h, UMRecorder.h'
-  s.resources = '*.bundle, Resources/*, *.lproj'
+  s.source_files  = 'UMFeedback.h', 'UMRecorder.h'
+  s.resources = '*.bundle', 'Resources/*', '*.lproj'
   s.vendored_frameworks = '*.framework'
   s.vendored_libraries = 'libUMfeedback.a'
   s.license = 'MIT'
